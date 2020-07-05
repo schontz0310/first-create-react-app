@@ -4,6 +4,10 @@
     "es6": true
   },
   "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
@@ -30,6 +34,7 @@
 
   ],
   "rules": {
+    "react/jsx-one-expression-per-line": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
